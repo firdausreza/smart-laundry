@@ -76,7 +76,6 @@
               </td>
               <td class="text-center p-2">
                 <input :checked="customer.taken" type="checkbox" name="finished" @change="toggle(customer)">
-                {{ customer.taken }}
               </td>
               <td class="text-center p-2">
                 <a id="delete" type="submit" class="text-red-400 cursor-pointer hover:underline" @click="deleteItem(customer.id)">

@@ -27,14 +27,12 @@ export const getters = {
 
   getIncome (state) {
     const total = state.customers.filter(item => item.taken === true).reduce((acc, item) => (acc + parseInt(item.price)), 0)
-    console.log(total)
     return total
   },
 
   getIncomeByMonth (state) {
     const currMonth = moment().month() + 1
     const total = state.customers.filter(item => item.taken === true && moment(item.date_in, 'D/M/YYYY').month() + 1 === currMonth).reduce((acc, item) => (acc + parseInt(item.price)), 0)
-    console.log(total)
     return total
   },
 
