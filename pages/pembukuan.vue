@@ -8,12 +8,12 @@
 
       <div class="w-full add-wrapper flex flex-col mt-8">
         <form @submit.prevent="addCustomer">
-          <div class="field-wrapper w-full flex sm:flex-col flex-row">
+          <div class="field-wrapper w-full flex flex-col lg:flex-row">
             <input v-model="cust.name" name="name" class="w-full p-4 focus:outline-none rounded-lg text-black" type="text" placeholder="Nama Pelanggan">
-            <input class="w-full p-4 sm:mt-8 md:ml-8 focus:outline-none rounded-lg text-black" type="text" :value="currentDate" :placeholder="currentDate" readonly>
-            <div class="flex w-full sm:mt-8">
-              <input v-model="cust.weight" name="weight" class="flex-1 p-4 md:ml-8 focus:outline-none rounded-tl-lg rounded-bl-lg text-black" type="number" placeholder="Berat">
-              <div class="p-4 addon items-center flex justify-center rounded-tr-lg rounded-br-lg bg-lightgray text-black">
+            <input class="w-full p-4 mt-8 lg:ml-8 focus:outline-none rounded-lg text-black" type="text" :value="currentDate" :placeholder="currentDate" readonly>
+            <div class="flex w-full mt-8 lg:ml-8">
+              <input v-model="cust.weight" name="weight" class="flex-1 p-4 focus:outline-none rounded-tl-lg rounded-bl-lg text-black" type="number" placeholder="Berat">
+              <div class="p-4 addon items-center justify-center rounded-tr-lg rounded-br-lg bg-lightgray text-black">
                 kg
               </div>
             </div>
@@ -101,8 +101,8 @@ export default {
       cust: {
         name: '',
         date_in: moment().format('D/M/YYYY'),
-        weight: 0,
-        price: 0,
+        weight: null,
+        price: null,
         additional: '',
         taken: false
       }
@@ -136,7 +136,6 @@ export default {
     },
     ...mapMutations({
       toggle: 'data/toggle'
-      // delete: 'data/delete'
     })
   }
 }
