@@ -4,7 +4,7 @@
       {{ title }}
     </h1>
     <h3 class="text-5xl text-green-300 mt-8">
-      Rp {{ nominal }}
+      {{ nominal }}
     </h3>
   </div>
 </template>

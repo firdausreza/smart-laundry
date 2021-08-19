@@ -6,8 +6,8 @@
         Data Penghasilan
       </h1>
       <div class="w-full income-wrapper flex sm:flex-col md:flex-row mt-8">
-        <DataCards title="Total Penghasilan Keseluruhan" :nominal="getAllIncome" />
-        <DataCards title="Total Penghasilan Bulan ini" :nominal="getMonthIncome" class="md:ml-16 sm:mt-8" />
+        <DataCards title="Total Penghasilan Keseluruhan" :nominal="`Rp ${getAllIncome}`" />
+        <DataCards title="Total Penghasilan Bulan ini" :nominal="`Rp ${getMonthIncome}`" class="md:ml-16 sm:mt-8" />
       </div>
 
       <hr class="border-2 border-white w-full mt-16">
