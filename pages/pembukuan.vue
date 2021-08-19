@@ -12,8 +12,8 @@
             <input v-model="cust.name" name="name" class="w-full p-4 focus:outline-none rounded-lg text-black" type="text" placeholder="Nama Pelanggan">
             <input class="w-full p-4 mt-8 lg:ml-8 focus:outline-none rounded-lg text-black" type="text" :value="currentDate" :placeholder="currentDate" readonly>
             <div class="flex w-full mt-8 lg:ml-8">
-              <input v-model="cust.weight" name="weight" class="flex-1 p-4 focus:outline-none rounded-tl-lg rounded-bl-lg text-black" type="number" placeholder="Berat">
-              <div class="p-4 addon items-center justify-center rounded-tr-lg rounded-br-lg bg-lightgray text-black">
+              <input v-model="cust.weight" name="weight" class="w-full p-4 focus:outline-none rounded-tl-lg rounded-bl-lg text-black" type="number" placeholder="Berat">
+              <div class="p-4 flex items-center justify-center rounded-tr-lg rounded-br-lg bg-lightgray text-black">
                 kg
               </div>
             </div>
